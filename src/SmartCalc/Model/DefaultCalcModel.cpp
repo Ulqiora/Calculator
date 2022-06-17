@@ -295,14 +295,4 @@ bool DefaultModel::is_function(char s) { return (std::strchr("cosintaqrlg", s) !
 bool DefaultModel::is_variable_char(char s) { return s == 'x'; }
 bool DefaultModel::is_bracketOpen(char s) { return s == '('; }
 bool DefaultModel::is_bracketClose(char s) { return s == ')'; }
-
-std::string convertString(const std::string& inputStr, const std::string& src, const std::string& dst) {
-    std::string result(inputStr);
-    size_t pos = result.find(src);
-    while (pos != std::string::npos) {
-        result.replace(pos, src.size(), dst);
-        pos = result.find(src, pos);
-    }
-    return result;
-}
 }  // namespace s21

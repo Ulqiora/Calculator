@@ -82,6 +82,4 @@ class DefaultModel {
     FSM<State, Event> _machine;
 };
 
-std::string convertString(const std::string& inputStr, const std::string& src, const std::string& dst);
-
 }  // namespace s21
